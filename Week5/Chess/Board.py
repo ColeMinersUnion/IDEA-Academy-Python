@@ -56,8 +56,6 @@ class Board:
         self.board[0][5] = Bishop(True, (5, 0))
         self.board[7][2] = Bishop(False, (2, 7))
         self.board[7][5] = Bishop(False, (5, 7))
-        
-
 
 
     def is_empty(self, x: int, y: int) -> bool:
@@ -75,6 +73,7 @@ class Board:
         
     @timing_decorator
     def move_piece(self, old_pos: tuple[int, int], new_pos: tuple[int, int]):
+        self.regenerate_possible_moves()
         if self.board[old_pos[1]][old_pos[0]] is None:
             raise ValueError(f"No piece at position {old_pos}")
         piece = self.board[old_pos[1]][old_pos[0]]
@@ -83,7 +82,7 @@ class Board:
         self.board[new_pos[1]][new_pos[0]] = piece
         self.board[old_pos[1]][old_pos[0]] = None
         piece.move(new_pos[0], new_pos[1])
-        self.regenerate_possible_moves()
+        #self.regenerate_possible_moves()
 
     def force_move(self, old_pos: tuple[int, int], new_pos: tuple[int, int]):
         if self.board[old_pos[1]][old_pos[0]] is None:
@@ -132,14 +131,13 @@ class Board:
                 self.force_move((7, 7), (5, 7))
             else:
                 self.force_move((4, 7), (2, 7))
-                self.force_move((0, 7), (3, 7))
-    
-           
+                self.force_move((0, 7), (3, 7))  
     
     def regenerate_possible_moves(self):
         for row in self.board:
             for piece in row:
                 if piece is not None:
+                    piece.possible_moves.clear()
                     piece.find_moves(self)
 
 
