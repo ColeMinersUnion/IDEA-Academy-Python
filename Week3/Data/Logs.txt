@@ -1,0 +1,10 @@
+Function 'example_function' called with args: (10000,), kwargs: {}
+Function 'example_function' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
