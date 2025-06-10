@@ -114,6 +114,26 @@ class Board:
                         self.board[7][4] is not None and not self.board[7][4].has_moved and
                         self.board[7][0] is not None and not self.board[7][0].has_moved)
             
+    def promote(self, pos: tuple[int, int], piece_type: str):
+        if self.board[pos[1]][pos[0]] is None or not isinstance(self.board[pos[1]][pos[0]], Pawn):
+            raise ValueError(f"No pawn at position {pos} for promotion")
+        
+        if piece_type not in ("Q", "R", "B", "N"):
+            raise ValueError(f"Invalid piece type for promotion: {piece_type}")
+        
+        color = self.board[pos[1]][pos[0]].color
+        new_piece = None
+        
+        if piece_type == "Q":
+            new_piece = Queen(color, pos)
+        elif piece_type == "R":
+            new_piece = Rook(color, pos)
+        elif piece_type == "B":
+            new_piece = Bishop(color, pos)
+        elif piece_type == "N":
+            new_piece = Knight(color, pos)
+        
+        self.board[pos[1]][pos[0]] = new_piece        
     
     def castle(self, short_castle: bool, color: bool):
         if not self.can_castle(short_castle, color):
