@@ -73,7 +73,7 @@ class Board:
         
     @timing_decorator
     def move_piece(self, old_pos: tuple[int, int], new_pos: tuple[int, int]):
-        self.regenerate_possible_moves()
+        #self.regenerate_possible_moves()
         if self.board[old_pos[1]][old_pos[0]] is None:
             raise ValueError(f"No piece at position {old_pos}")
         piece = self.board[old_pos[1]][old_pos[0]]

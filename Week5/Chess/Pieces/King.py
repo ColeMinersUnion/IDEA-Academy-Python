@@ -30,8 +30,8 @@ class King(Piece):
             for piece in row:
                 if piece is not None and piece.color != self.color:
                     if (x, y) in piece.possible_moves:
-                        print(f"King at ({self.pos[0]}, {self.pos[1]}) is in check by {piece.get_letter()} at ({piece.pos[0]}, {piece.pos[1]})")
-                        print(f"Possible moves for {str(piece)}: {piece.possible_moves}")
+                        #print(f"King at ({self.pos[0]}, {self.pos[1]}) is in check by {piece.get_letter()} at ({piece.pos[0]}, {piece.pos[1]})")
+                        #print(f"Possible moves for {str(piece)}: {piece.possible_moves}")
                         return True
         return False
     
