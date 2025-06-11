@@ -4,7 +4,7 @@ This week, we'll be talking about virtual environments, how to manage and isolat
 ## Venv
 
 ## Libraries
-
+We'll use three libraries this week, mostly arbitrarily chosen. Feel free to swap out a project. 
 ### Requirements.txt
 
 ### Pypi
