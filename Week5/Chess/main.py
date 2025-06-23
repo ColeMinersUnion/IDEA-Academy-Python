@@ -4,10 +4,11 @@ from Helpers.GameReplay import replay_game
 from os import path
 from Helpers.ParseSAN import parse_san_move
 
+
    
 
 board = Board()
-turn = True #White's turn
+turn = True
 print(board)
 
 

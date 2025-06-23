@@ -4,7 +4,10 @@ Classes for each piece. Type in algebraic notation for moves.
 Moves are checked for validity.
 
 ## To-do
-~~Rook~~, ~~Bishop~~, ~~Queen~~, ~~Castling~~, En Passant, ~~Algebraic Notation Parser~~, Promotion, main loop, 
+~~Rook~~, ~~Bishop~~, ~~Queen~~, ~~Castling~~, En Passant, ~~Algebraic Notation Parser~~, ~~Promotion~~, ~~main loop~~, Better Check system, 
+
+## Argparse
+headless option, other stuff perhaps?
 
 ## Note to self, 
 Castling does not check for checks that prevent castling.
