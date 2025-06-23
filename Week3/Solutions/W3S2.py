@@ -13,11 +13,18 @@ def generate_csv_data(filename, num_rows=100):
         file.write("ID,Value\n")
         for i in range(num_rows):
             file.write(f"{i},{randint(1, 100)}\n")
+    
 
 def yield_data(filename):
     with open(filename, 'r') as file:
         for line in file.readlines():
             yield line.strip().split(',')
+
+def yeild_data_junior(filename):
+    file = open(filename, 'r')
+    for line in file.readlines():
+        yield line.strip().split(',')
+    file.close()
 
 
 avg = lambda data: sum(data) / len(data) if data else 0

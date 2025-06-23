@@ -8,3 +8,16 @@ Function 'wrapper' called with args: (10000,), kwargs: {}
 Function 'wrapper' returned: 49995000
 Function 'wrapper' called with args: (10000,), kwargs: {}
 Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' called with args: (), kwargs: {'n': 10000}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000
+Function 'wrapper' called with args: (10000,), kwargs: {}
+Function 'wrapper' returned: 49995000

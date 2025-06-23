@@ -24,8 +24,7 @@ def helper():
 def print_board(board: list):
     
     # Convert board to strings
-    def convert_to_str(board):
-        return [" X " if x and x is not None else " O " if not x and x is not None else '   ' for x in board]
+    convert_to_str = lambda board: [" X " if x and x is not None else " O " if not x and x is not None else '   ' for x in board]
     board = convert_to_str(board)
     print("\n")
     for i in range(3):

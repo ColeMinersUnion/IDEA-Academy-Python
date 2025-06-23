@@ -2,7 +2,7 @@
 A brief week for some larger topics. As the course progresses, the pace will slow, but the material becomes more in depth. This week will cover functions, the flexibility of functions in python and File Handling. 
 
 ## Keywords
-`def`, `return`, `yield`, `with`, `open`, `close`, `as`
+`def`, `return`, `yield`, `with`, `open`, `close`, `as`, `lambda`
 
 ## Functions
 We'll be going over the basics of functions in python. We'll learn how to wrap reuseable code into functions, how to use functions to make code more readable. 
